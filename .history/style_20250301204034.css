@@ -1,0 +1,96 @@
+.bouncing-letters span {
+display: inline-block;
+color: white;
+text-shadow: 0px 0px 0px cyan,
+             0px 0px 20px cyan,
+             0px 0px 40px cyan,
+             0px 0px 80px cyan; 
+font-size: 64px;
+font-weight: bold;
+animation: bounce 0.8s ease infinite alternate;
+
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0) }
+    100% { transform: translateY(-20px) }
+
+}
+
+.bouncing-letters span:nth-child(1)
+{ animation-delay:  0.1s; }
+
+
+.bouncing-letters span:nth-child(2)
+{ animation-delay:  0.2s; }
+
+
+.bouncing-letters span:nth-child(3)
+{ animation-delay:  0.3s; }
+
+
+.bouncing-letters span:nth-child(4)
+{ animation-delay:  0.4s; }
+
+
+.bouncing-letters span:nth-child(5)
+{ animation-delay: 0.5s; }
+
+
+.bouncing-letters span:nth-child(6)
+{ animation-delay:  0.6s; }
+
+.bouncing-letters span:nth-child(7)
+{ animation-delay:  0.7s; }
+
+.bouncing-letters span:nth-child(8)
+{ animation-delay:  0.8s; }
+
+.bouncing-letters span:nth-child(9)
+{ animation-delay:  0.9s; }
+
+.bouncing-letters span:nth-child(10)
+{ animation-delay:  0.10s; }
+
+body{
+    background-color: var(--dark-bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;  
+}
+:root{
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
+  --accent-glow: rgba(46, 204, 113, 0.4);
+  --text: #ffffff;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo{
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: ;
+
+
+
+}
